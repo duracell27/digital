@@ -1,0 +1,205 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+//custom_sass------------------------------------//
+
+.main
+    width: 100%
+    
+    position: relative
+    
+    .div1
+        height: 650px
+        background-image: url(../img/header-bg.jpg)
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            z-index: 0
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            background: linear-gradient(120deg, rgba(#de813c, .7), rgba(#3f519a, .7))
+            background-attachment: fixed
+        nav
+            position: relative
+            z-index: 2
+        
+    .div2
+        position: relative
+        top: 0
+        left: -5%
+        width: 110%
+        height: 170px
+        border-bottom-left-radius: 50%
+        border-bottom-right-radius: 50%
+        background-image: url(../img/header-bg.jpg)
+        background-size: cover
+        background-attachment: fixed
+        overflow: hidden
+        &:after
+            content: ''
+            position: absolute
+            z-index: 0
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            background: linear-gradient(120deg, rgba(#de813c, .7), rgba(#3f519a, .7))
+            background-attachment: fixed
+            overflow: hidden
+    
+button.hamburger,button.hamburger.is-active
+	outline: none
+	span.hamburger-inner
+		background-color: #fff
+		&::after
+			background-color: #fff
+		&::before
+			background-color: #fff
+.navbar-brand
+    color: #fff
+    font-size: 60px
+    font-weight: 600
+    line-height: 60px
+    &:hover
+        color: #fff
+    span
+        color: #fba419
+.nav-item
+    &:nth-child(even)
+        a
+            font-family: Lato
+            font-weight: bold
+            font-size: 14px
+            text-transform: uppercase
+            color: #fff
+            border-top: 4px solid transparent
+            border-bottom: 4px solid transparent
+            &:hover
+                border-top: 4px solid #de813c
+                border-bottom: 4px solid #3f519a
+    &:nth-child(odd)
+        a
+            font-family: Lato
+            font-weight: bold
+            font-size: 14px
+            text-transform: uppercase
+            color: #fff
+            border-top: 4px solid transparent
+            border-bottom: 4px solid transparent
+            &:hover
+                border-top: 4px solid #3f519a
+                border-bottom: 4px solid #de813c
+    
+        
+        
+.navbar-expand-lg .navbar-nav .nav-link
+    
+    padding-left: 18px
+    padding-right: 18px
+    
+.header-content
+    position: relative
+    z-index: 3
+    display: flex
+    justify-content: center
+    .wrap
+        
+        text-align: center
+        .h1   
+            font-family: Bernadette
+            font-size: 110px
+            color: #fff
+            margin-top: 130px
+        .h2    
+            font-family: Lato
+            font-weight: bold
+            font-size: 38px
+            color: #fff
+            margin-top: 30px
+        p
+            font-family: Lato
+            font-weight: 300
+            font-size: 16px
+            color: #fff
+            margin-top: 30px
+            padding: 0 28%
+        .btn
+            display: block
+            width: 145px
+            height: 40px
+            background-color: #fff
+            color: #000
+            font-size: 15px
+            font-family: Lato
+            font-weight: bold
+            text-align: center
+            line-height: 40px
+            border-radius: 25px
+            text-transform: uppercase
+            padding: 0
+            position: relative
+            z-index: 5
+            top: 30px
+            left: 50%
+            transform: translate(-50%,-50%)
+            outline: none
+            border: none
+            &:hover
+                color: #fff
+                background: linear-gradient(90deg, #3f519a, #de813c, #3f519a)
+                background-size: 200%
+                animation: bg 5s linear infinite
+                
+@keyframes bg
+    0%
+        background-position: 0%
+    100%
+        background-position: 200%
+
+            
+            
+            
+
+@import "media" // Always at the end
