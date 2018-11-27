@@ -330,6 +330,67 @@ button.hamburger,button.hamburger.is-active
         img
             height: 514px
 
+//section tiles----------------------------//
+
+.tiles
+    margin-top: 160px
+    position: relative
+    .image-container
+        border-radius: 10px
+        overflow: hidden
+        margin-top: 30px
+        img
+            width: 100%
+            height: 360px
+    .main-tile
+        text-align: center
+        width: 730px
+        height: 370px
+        border-radius: 10px
+        background-color: #fff
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        .h2
+            font-family: Bernadette
+            font-size: 50px
+            margin-top: 30px
+            margin-bottom: 20px
+        p
+            font-family: Lato-italic
+            font-size: 18px
+            color: #a4a4a4 
+            padding: 0 7%
+            margin-bottom: 40px       
+        a.btn-color
+            display: block
+            width: 145px
+            height: 40px
+            background: linear-gradient(90deg, #de813c, #3f519a, #de813c, #3f519a, #3f519a)
+            color: #fff
+            font-size: 15px
+            font-family: Lato
+            font-weight: bold
+            text-align: center
+            line-height: 40px
+            border-radius: 25px
+            text-transform: uppercase
+            padding: 0
+            position: relative
+            z-index: 5
+            top: 15px
+            left: 50%
+            transform: translate(-50%,-50%)
+            outline: none
+            border: none
+            text-decoration: none
+            background-size: 300%
+            &:hover
+                color: #fff
+                background: linear-gradient(90deg, #de813c, #3f519a, #de813c)
+                background-size: 200%
+                animation: bg 5s linear infinite
 @import "media" // Always at the end
 @keyframes bg
     0%
