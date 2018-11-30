@@ -544,6 +544,50 @@ button.hamburger,button.hamburger.is-active
         display: flex
         justify-content: center
         align-items: center
+        .left-col
+            .h2
+                font-family: Bernadette
+                font-size: 60px
+                color: $text
+                margin-bottom: 0
+                line-height: 60px
+            .h3
+                font-family: Lato
+                font-weight: bold
+                color: #505050
+                font-size: 22px
+                margin-bottom: 25px
+            p
+                font-family: Lato
+                font-weight: 300
+                font-size: 18px
+                color: $text
+            .progres
+                &-container
+                    position: relative
+                    p
+                        font-family: Lato
+                        font-weight: 500
+                        font-size: 25px
+                        color: $text
+                    span
+                        font-family: Lato
+                        font-weight: bold
+                        font-size: 25px
+                        color: $text
+                        position: absolute
+                        right: 0
+                        bottom: 10px    
+                    .progres-color
+                        height: 15px
+                        width: 80%
+                        background: linear-gradient(90deg, #de813c, #3f519a)
+                        border-radius: 8px
+                    .progres-gray
+                        height: 15px
+                        width: 100%
+                        background-color: #dbdbdb
+                        border-radius: 8px
     .right-col
         display: flex
         width: 100%
@@ -555,6 +599,33 @@ button.hamburger,button.hamburger.is-active
         .bg-side
             width: 50%
             background: linear-gradient(120deg, #de813c, #3f519a)
+            padding: 60px 40px
+            position: relative
+            .h3
+                font-family: Lato
+                font-weight: 500
+                font-size: 22px
+                color: #fff
+            p
+                font-family: Lato
+                font-weight: 300
+                font-size: 18px
+                color: #fff
+            .social-icons
+                display: flex
+                position: absolute
+                bottom: 60px
+                .round
+                    width: 60px
+                    height: 60px
+                    background-color: #fff
+                    border-radius: 50%
+                    text-align: center
+                    margin-right: 20px
+                    .fab
+                        font-size: 35px
+                        line-height: 60px
+                        color: $text
 
 
 @import "media" // Always at the end
