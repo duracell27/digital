@@ -562,6 +562,7 @@ button.hamburger,button.hamburger.is-active
                 font-weight: 300
                 font-size: 18px
                 color: $text
+                margin-bottom: 30px
             .progres
                 &-container
                     position: relative
@@ -570,6 +571,7 @@ button.hamburger,button.hamburger.is-active
                         font-weight: 500
                         font-size: 25px
                         color: $text
+                        margin-bottom: 0
                     span
                         font-family: Lato
                         font-weight: bold
@@ -588,6 +590,7 @@ button.hamburger,button.hamburger.is-active
                         width: 100%
                         background-color: #dbdbdb
                         border-radius: 8px
+                        margin-bottom: 20px
     .right-col
         display: flex
         width: 100%
@@ -626,6 +629,147 @@ button.hamburger,button.hamburger.is-active
                         font-size: 35px
                         line-height: 60px
                         color: $text
+
+//section_price---------------------------------//
+
+.price
+    position: relative
+    .wrapper
+        display: flex
+        
+        .left-bg
+            width: 30%
+            height: 780px
+            background: linear-gradient(120deg, #de813c, #3f519a)
+        .right-bg
+            width: 70%
+            height: 780px
+            background-color: #f4f4f4
+    .content
+        display: flex
+        width: 765px
+        position: absolute
+        top: 95px
+        left: 0
+        .left-side
+            width: 50%
+            height: 590px
+            text-align: center
+            background-color: #fff
+            .h2
+                font-family: Bernadette
+                font-size: 47px
+                color: $text
+                margin-top: 57px
+                margin-bottom: 4px  
+            .h4
+                font-family: Lato
+                font-size: 20px
+                font-weight: bold
+                color: $text
+                margin-bottom: 0
+            .h3
+                font-family: Lato
+                font-size: 25px
+                font-weight: bold
+                color: $text
+                margin-bottom: 4px
+            p
+                font-family: Lato
+                font-size: 18px
+                font-weight: 300
+                color: $text
+                padding: 0 10%
+            .price
+                background: linear-gradient(120deg, #de813c, #3f519a)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                color: #0B2349
+                margin: 27px 0
+                p
+                    font-size: 50px
+                    font-family: Lato
+                    font-weight: bold
+                    margin-bottom: 0
+                    span
+                        font-size: 72px
+        .right-side
+            width: 50%
+            height: 590px
+            background: linear-gradient(120deg, #de813c, #3f519a)
+            color: #fff
+            text-align: center
+            .h2
+                font-family: Lato
+                font-weight: bold
+                font-size: 55px
+                margin-top: 105px
+                margin-bottom: 0
+            p
+                font-family: Lato
+                font-weight: bold
+                font-size: 25px
+            ul
+                list-style-type: none
+                padding-left: 0
+                li
+                    font-size: 16px
+                    font-family: Lato
+                    font-weight: 500
+                    margin-bottom: 9px
+                    &:before
+                        content: '\f00c'
+                        font-family: fontawesomesolid
+                        color: #fff
+                        margin-right: 16px
+            .btn-color
+                display: block
+                width: 145px
+                height: 40px
+                background-color: #fff
+                color: #000
+                font-size: 15px
+                font-family: Lato
+                font-weight: bold
+                text-align: center
+                line-height: 40px
+                border-radius: 25px
+                text-transform: uppercase
+                padding: 0
+                position: relative
+                z-index: 5
+                top: 45px
+                left: 50%
+                transform: translate(-50%,-50%)
+                outline: none
+                border: none
+                &:hover
+                    color: #fff
+                    background: linear-gradient(90deg, #3f519a, #de813c, #3f519a)
+                    background-size: 200%
+                    animation: bg 5s linear infinite
+                    text-decoration: none
+
+    .right-text
+        color: $text
+        width: 520px
+        position: absolute
+        right: 5%
+        top: 150px
+        .h2
+            font-family: Bernadette
+            font-size: 50px
+            margin-bottom: 25px
+        .h4
+            font-family: Lato
+            font-weight: bold
+            font-size: 18px
+            margin-bottom: 30px
+            line-height: 1.6
+        p
+            font-family: Lato
+            font-weight: 300
+            font-size: 18px
 
 
 @import "media" // Always at the end
