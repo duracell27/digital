@@ -43,7 +43,7 @@ b, strong
     width: 100%
 
     position: relative
-
+    overflow: hidden
     .div1
         height: 650px
         background-image: url(../img/header-bg.jpg)
@@ -345,7 +345,7 @@ button.hamburger,button.hamburger.is-active
     .main-tile
         text-align: center
         width: 730px
-        height: 370px
+        min-height: 370px
         border-radius: 10px
         background-color: #fff
         position: absolute
@@ -396,9 +396,10 @@ button.hamburger,button.hamburger.is-active
 
 .services
     margin-top: 75px
-    height: 640px
+    min-height: 640px
     background-color: #f4f4f4
     position: relative
+    overflow: hidden
     .gradient-card
         width: 355px
         height: 475px
@@ -507,8 +508,8 @@ button.hamburger,button.hamburger.is-active
             text-align: center
             margin: 0 10px 
             .img-wrap
-                width: 220px
-                height: 275px
+                //width: 220px
+                height: 240px
                 border-radius: 8px
                 overflow: hidden
                 img
@@ -539,7 +540,8 @@ button.hamburger,button.hamburger.is-active
 //section_anita----------------------------//
 
 .anita
-    margin-top: 100px
+    margin-top: 145px
+    margin-bottom: 125px
     .wrapper
         display: flex
         justify-content: center
@@ -594,6 +596,7 @@ button.hamburger,button.hamburger.is-active
     .right-col
         display: flex
         width: 100%
+        max-width: 900px
         .img-side
             width: 50%
             img

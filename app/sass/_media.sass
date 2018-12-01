@@ -5,15 +5,154 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+    .navbar-expand-lg .navbar-nav .nav-link
+        padding-left: 12px
+        padding-right: 12px
+    .header-content
+        .wrap
+            .h1
+                font-size: 85px
+                margin-top: 90px
+            .h2
+                font-size: 32px
+    .a
+        .left-col
+            padding-right: 33% 
+        .right-col
+            padding-left: 20%
+        .letterA
+            position: absolute
+            img
+                height: 450px
 // ≥992px
 +media-breakpoint-down(md)
-
+    
+    .anita
+        margin-top: 145px
+        margin-bottom: 125px
+        .right-col
+            display: flex
+            width: 100%
+            max-width: 900px
+            .img-side
+                width: 50%
+                img
+                    width: 100%
+                    height: 730px
+            .bg-side
+                .social-icons        
+                    .round
+                        width: 45px
+                        height: 45px
+                        margin-right: 15px
+                        .fab
+                            font-size: 25px
+                            line-height: 45px
+    .a
+        .left-col
+            padding-right: 0%
+        .right-col
+            padding-left: 0%
+        .letterA
+            display: none
 // ≥768px
 +media-breakpoint-down(sm)
-
+    .header-content
+        .wrap
+            text-align: center
+            .h1
+                font-size: 60px
+                margin-top: 90px
+            .h2
+                font-size: 25px
+                margin-top: 30px
+            p
+                font-size: 14px
+                margin-top: 30px
+                padding: 0 28%
+    .tiles
+        .main-tile
+            text-align: center
+            width: 100%
+    .a
+   	    .h2
+             text-align: center
+        .left-col
+            a.btn-color
+            	left: 50%
+            	transform: translate(-50%,-50%)
+            	bottom: -60px
+        .right-col
+            padding-left: 0%
+        .letterA
+            display: none
+    .services
+        margin-top: 75px
+        min-height: 640px
+        background-color: #f4f4f4
+        position: relative
+        overflow: hidden
+        .gradient-card
+            width: 355px
+            height: 475px
+            background: linear-gradient(90deg, #de813c, #3f519a)
+            display: flex
+            flex-wrap: wrap
+            padding: 25px
+            border-radius: 10px
+            position: absolute
+            top: 533px
+            left: 50%
+            transform: translate(-50%)
+        img
+            margin-left: 0
+            width: 100%
+        .wrapper
+            .left-block
+                .h2
+                    padding-top: 30px
+                    text-align: center
+                p
+                    span
+                        font-family: Lato
+                        color: $text
+                        font-weight: 500
+                    font-family: Lato
+                    font-weight: 300
+                    color: $text
+                    font-size: 16px
+                    padding: 0 2%
+                    text-align: center
+                a.btn-color
+                    top: -9px
+                    left: 50%
+                    transform: translate(-50%)
 // ≥576px
 +media-breakpoint-down(xs)
+    .header-content
+        .wrap
+            text-align: center
+            .h1
+                font-size: 40px
+                margin-top: 90px
+            p
+                padding: 0 18%
+    .tiles
+        margin-top: 160px
+        position: relative
+        .image-container
+            border-radius: 10px
+            overflow: hidden
+            margin-top: 30px
+            img
+                width: 100%
+                height: 360px
+        .main-tile
+            .h2
+                font-size: 35px
+            p
+                font-size: 14px
+                padding: 0
 
 
 /*==========  Mobile First  ==========*/
