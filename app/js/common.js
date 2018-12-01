@@ -16,7 +16,7 @@ $(function() {
 			calculated = (width/2)+65;
 		}else if (width < 992 && width > 768) {
 			calculated = (width/2)+54;
-		}else if (width < 768 && width > 576) {
+		}else if (width < 768 && width > 320) {
 			$('.anita .right-col').css('width', '100%');
 		}else{
 			calculated = (width/2)+80;
@@ -29,7 +29,7 @@ $(function() {
 				calculated = (width/2)+65;
 			}else if (width < 992 && width > 768) {
 				calculated = (width/2)+54;
-			}else if (width < 768 && width > 576) {
+			}else if (width < 768 && width > 320) {
 				$('.anita .right-col').css('width', '100%');
 			}else{
 				calculated = (width/2)+80;
@@ -44,14 +44,24 @@ $(function() {
 		console.log(width1);
 		console.log(width2);
 		var rezult = width1 - width2;
-		$('.price .content').css('left', rezult);
+		if (rezult < 0) {
+			$('.price .content').css('left', 0);	
+		}else{
+			
+			$('.price .content').css('left', rezult);
+		}
 		$(window).resize(function(){
 			var width1 = $('.price .wrapper .left-bg').width();
 			var width2 = $('.price .content .left-side').width();
 			console.log(width1);
 			console.log(width2);
 			var rezult = width1 - width2;
-			$('.price .content').css('left', rezult);
+			if (rezult < 0) {
+				$('.price .content').css('left', 0);	
+			}else{
+				
+				$('.price .content').css('left', rezult);
+			}
 		});
 	});
 

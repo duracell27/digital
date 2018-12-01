@@ -778,7 +778,7 @@ button.hamburger,button.hamburger.is-active
 
 .getintouch
     position: relative
-    height: 390px
+    min-height: 390px
     background-position: 0 -315px
     &:after
         content: ''
@@ -797,8 +797,10 @@ button.hamburger,button.hamburger.is-active
             font-size: 47px
             color: #fff
             padding-top: 85px
+            margin-bottom: 40px
     .icons
         display: flex
+        flex-wrap: wrap
         position: relative
         z-index: 3
         justify-content: center
@@ -809,7 +811,7 @@ button.hamburger,button.hamburger.is-active
             border: 3px solid #fff
             text-align: center
             border-radius: 50%
-            margin: 50px 20px
+            margin: 20px 20px
             .fab
                 font-family: fontawesomebrands
                 font-size: 35px
@@ -821,7 +823,7 @@ button.hamburger,button.hamburger.is-active
 footer
     .footer-block
         display: flex
-        justify-content: center
+        justify-content: flex-start
         height: 230px
         align-items: center
         .far
@@ -829,11 +831,17 @@ footer
             font-size: 50px
             color: #fc9e20
             margin-top: -40px
+            width: 50px
+            height: 50px
+            text-align: center
         .fas
             font-family: fontawesomesolid
             font-size: 50px
             color: #fc9e20
             margin-top: -25px
+            width: 50px
+            height: 50px
+            text-align: center
         .info
             margin-left: 30px
             .h3
